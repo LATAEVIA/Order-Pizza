@@ -21,25 +21,25 @@
           <form class="pizza-order">
             <div class="radio">
               <label>
-                <input type="radio" name="pizza" id="personalPizza" value="personalPizza">
+                <input type="radio" name="pizza" id="personalPizza" value="personal">
                 Personal 8" Pizza
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="pizza" id="smallPizza" value="smallPizza">
+                <input type="radio" name="pizza" id="smallPizza" value="small">
                 Small 10" Pizza
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="pizza" id="mediumPizza" value="mediumPizza">
+                <input type="radio" name="pizza" id="mediumPizza" value="medium">
                 Medium 12" Pizza
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="pizza" id="largePizza" value="largePizza">
+                <input type="radio" name="pizza" id="largePizza" value="large">
                 Large 14" Pizza
               </label>
             </div>
@@ -109,11 +109,25 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <!-- Submit Pizza -->
-          <ul>
-            <li></li>
-          </ul>
-        </div>
+          <!-- Output Pizza Price -->
+          <div id="priceHide">
+            <h2 id="priceConfirm">Your pizza will cost $<span id="priceOutput"></span>.</h2>
+          </div>
+
+          <!-- Output Pizza -->
+          <!-- <div id="sizeHide">
+            <p id="orderConfirm">You ordered a <span id="sizeOutput"></span> pizza</p>
+          </div>
+
+          <div id="toppingsHide">
+            <p>topped with:</p>
+            <ul id="outputToppings">
+              <li><span id="toppingsOutput"></span></li>
+            </ul>
+          </div>
+        </div> -->
+
+
       </div>
     </div>
   </body>
