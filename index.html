@@ -10,26 +10,101 @@
   <body>
     <!-- Jumbotron -->
     <div class="jumbotron">
-      <h1>Happy Home of Humane Hunger Handling </h1>
+      <h1>PETA Pizza</h1>
+      <h2>Happy Home of Humane Hunger Handling<br><small>Due to the high water content of veggies and the absorbent nature of pizza crust please expect soggy pizza.</small></h2>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <h2>Order Pizza:</h2>
-          <form id="pizza-order">
-            <div class="form-group">
-              <label for=""></label>
-              <input type="text" class="form-control" id="">
+        <div class="col-sm-5 col-sm-offset-1">
+          <!-- Pizza Size -->
+          <h2>Pick A Pie Perimeter:</h2>
+          <form class="pizza-order">
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="personalPizza" value="personalPizza">
+                Personal 8" Pizza
+              </label>
             </div>
-            <div class="form-group">
-              <label for=""></label>
-              <input type="text" class="form-control" id="">
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="smallPizza" value="smallPizza">
+                Small 10" Pizza
+              </label>
             </div>
-            <button id=""type="submit" class="btn btn-info">Complete Order</button>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="mediumPizza" value="mediumPizza">
+                Small 12" Pizza
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="pizza" id="largePizza" value="largePizza">
+                Small 14" Pizza
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-5">
+          <!-- Pizza Toppings -->
+          <h2>Top with Toppings:</h2>
+          <form class="pizza-order">
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Romanesco Broccoli">
+                Romanesco Broccoli
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Rambutan">
+                Rambutan
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Ackee">
+                Ackee
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Buddha's Hand">
+                Buddha's Hand
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Purple Sweet Potato">
+                Purple Sweet Potato
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Seitan (Gluten Abundent Meat Substitute)">
+                Seitan (Gluten Abundent Meat Substitute)
+              </label>
+            </div>
+            <div class="checkbox form-group">
+              <label>
+                <input type="checkbox" name"topping" value="Elfin Tomato">
+                Elfin Tomato
+              </label>
+            </div>
           </form>
         </div>
       </div>
     </div>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <!-- Submit Pizza -->
+          <form class="pizza-order">
+            <br>
+            <button id=""type="submit" class="btn btn-danger">Complete Order</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
