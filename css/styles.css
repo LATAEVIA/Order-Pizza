@@ -1,5 +1,10 @@
 .jumbotron {
   text-align: center;
+  font-family: hotpizza, sans-serif;
+  background-image: url('../sauce.jpg');
+  background-size: cover;
+  text-shadow: 1px 1px 1px #FFF;
+  color: rgba(65, 118, 60, 0.69);
 }
 #sizeHide {
   display: none;
@@ -9,4 +14,14 @@
 }
 #priceHide {
   display: none;
+}
+@font-face { font-family: hotpizza; src: url('../hotpizza.ttf'); }
+@font-face { font-family: hotpizza; font-weight: bold; src: url('../hotpizza.ttf');}
+body {
+  width: 100%;
+  background-image: url('../background.jpg');
+  background-size: cover;
+}
+.jumbotron h2 small {
+  color: rgba(65, 118, 60, 0.69);
 }
