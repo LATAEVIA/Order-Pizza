@@ -1,6 +1,6 @@
 // Business Logic
 var pizzaToppings = [];
-var addfour = 4
+
 function Pizza (pizzaSize, pizzaToppings){
 this.pizzaSize = pizzaSize;
 this.pizzaToppings = pizzaToppings;
@@ -9,20 +9,24 @@ this.pizzaCost = 0;
 
 Pizza.prototype.pizzaCalc = function() {
   if (this.pizzaSize === "personalPizza") {
-    this.pizzaCost =+ 4;
+    this.pizzaCost =+ 5;
   } else if (this.pizzaSize === "smallPizza") {
-    this.pizzaCost =+ 6;
+    this.pizzaCost =+ 7;
   } else if (this.pizzaSize === "mediumPizza") {
-    this.pizzaCost =+ 8;
+    this.pizzaCost =+ 9;
   } else if (this.pizzaSize === "largePizza") {
-    this.pizzaCost =+ 10;
+    this.pizzaCost =+ 11;
   } else {
     alert("Pick your pie primeter please!");
   }
-  for (var i = 1; i <= this.pizzaToppings.length; i++) {
+  for (var i = 0; i < this.pizzaToppings.length; i++) {
     this.pizzaCost = this.pizzaCost + .5;
   }
 }
+
+// Pizza.prototype.orderAndPrice = function() {
+//   return this.newLocation + " " + this.newLandmark + " " + this.newSeason;
+// }
 
 // User Interface Logic
 $(document).ready(function(){
@@ -38,5 +42,6 @@ $(document).ready(function(){
 
     newPizza.pizzaCalc();
     console.log(newPizza);
+    
   });
 });
